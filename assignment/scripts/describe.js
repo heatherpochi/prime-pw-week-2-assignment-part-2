@@ -134,6 +134,8 @@ let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+//colorTwo also needs to be set to 'purple' so add colorTwo = 'purple'.
+  To check if a boolean variable mix is true, if (mix) {} would be sufficient because if statments checks if the condition specified in the parenthesis is true or not.
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -144,9 +146,10 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
-let temp = 40;
+let temp = 40
+// time can change so the variable time needs to be created using let or var. I would use let time = 4;
 const time = 4;
-
+//To check if both conditions are true we need to use && instead of ||. It should say if(temp > 39 && time >=4)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -158,7 +161,25 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+// If minAge can change we need to use var or let. If minAge is fixed const is okay. I'll assume that minAge is fixed at 21 in this case.
 const minAge = 21;
+
+// The greater than or equal operator is >= so I would write age >= minAge rather than minAge <= age. In this case, I would have to swich the order of code blocks. So my code would be
+ if(age >= minAge){
+  console.log('enter');
+} else {
+  console.log('enter');
+};
+
+Or if the original coder's intention was to reverse the position of age and minAge thus negate > or =, I would write if(minAge > age) and keep the rest of the code as is. So the code would be
+
+if(minAge > age) {
+  console.log('no entry');
+} else {
+  console.log('enter');
+}
+
+
 
 if(minAge <= age) {
   console.log('no entry');
